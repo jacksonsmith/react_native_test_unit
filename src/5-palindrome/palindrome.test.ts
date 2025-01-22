@@ -1,21 +1,19 @@
 import { isPalindrome } from "./palindrome";
 
-test("testIsPalindrome_EmptyString", () => {
-  const result = isPalindrome("");
-  expect(result).toBe(true);
-});
+describe("isPalindrome", () => {
+  it("should return true for an empty string", () => {
+    expect(isPalindrome("")).toBe(true);
+  });
 
-test("testIsPalindrome_SingleCharacterPalindrome", () => {
-  const result = isPalindrome("a");
-  expect(result).toBe(true);
-});
+  it("should return true for a single-character string", () => {
+    expect(isPalindrome("a")).toBe(true);
+  });
 
-test("testIsPalindrome_PalindromeString", () => {
-  const result = isPalindrome("radar");
-  expect(result).toBe(true);
-});
+  it("should return true for a palindrome string", () => {
+    expect(isPalindrome("radar")).toBe(true);
+  });
 
-test("testIsPalindrome_NonPalindromeString", () => {
-  const result = isPalindrome("hello");
-  expect(result).toBe(false);
+  it("should return false for a non-palindrome string", () => {
+    expect(isPalindrome("hello")).toBe(false);
+  });
 });

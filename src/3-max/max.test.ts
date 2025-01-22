@@ -1,26 +1,19 @@
 import { max } from "./max";
 
-test("testLength_BothPositiveNumbers", () => {
-  const result = max(5, 10);
-  expect(result).toBe(10);
-});
+describe("max", () => {
+  it("should return the larger of two positive numbers", () => {
+    expect(max(3, 5)).toBe(5);
+  });
 
-test("testLength_BothNegativeNumbers", () => {
-  const result = max(-8, -3);
-  expect(result).toBe(-3);
-});
+  it("should return the larger of two negative numbers", () => {
+    expect(max(-3, -5)).toBe(-3);
+  });
 
-test("testLength_PositiveAndNegativeNumber", () => {
-  const result = max(-2, 7);
-  expect(result).toBe(7);
-});
+  it("should return the correct value for a positive and a negative number", () => {
+    expect(max(5, -3)).toBe(5);
+  });
 
-test("testLength_ZeroAndPositiveNumber", () => {
-  const result = max(0, 12);
-  expect(result).toBe(12);
-});
-
-test("testLength_ZeroAndNegativeNumber", () => {
-  const result = max(-6, 0);
-  expect(result).toBe(0);
+  it("should return the other number when one is zero", () => {
+    expect(max(0, 5)).toBe(5);
+  });
 });

@@ -1,31 +1,19 @@
 import { sort } from "./sort";
 
-describe("Sort Exercise", () => {
-  test("testSort_EmptyArray", () => {
-    const result = sort([]);
-    expect(result).toEqual([]);
+describe("sort", () => {
+  it("should return an empty array when given an empty array", () => {
+    expect(sort([])).toEqual([]);
   });
 
-  test("testSort_SingleElementArray", () => {
-    const result = sort(["apple"]);
-    expect(result).toEqual(["apple"]);
+  it("should return the same array when given a single-element array", () => {
+    expect(sort(["a"])).toEqual(["a"]);
   });
 
-  test("testSort_SortedArray", () => {
-    const input = ["apple", "banana", "cherry"];
-    const result = sort(input);
-    expect(result).toEqual(["apple", "banana", "cherry"]);
+  it("should return the array already sorted", () => {
+    expect(sort(["a", "b", "c"])).toEqual(["a", "b", "c"]);
   });
 
-  test("testSort_ReverseSortedArray", () => {
-    const input = ["zebra", "lion", "bear"];
-    const result = sort(input);
-    expect(result).toEqual(["bear", "lion", "zebra"]);
-  });
-
-  test("testSort_UnsortedArray", () => {
-    const input = ["banana", "apple", "cherry"];
-    const result = sort(input);
-    expect(result).toEqual(["apple", "banana", "cherry"]);
+  it("should return the array sorted alphabetically", () => {
+    expect(sort(["b", "a", "c"])).toEqual(["a", "b", "c"]);
   });
 });

@@ -1,3 +1,3 @@
-export const sort = (arr: string[]): string[] => {
-  return arr.sort();
+export const isPalindrome = (word: string): boolean => {
+  return false;
 };
