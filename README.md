@@ -1,7 +1,6 @@
-
 # **Projeto de Prática de Testes Unitários com TypeScript e Jest**
 
-Este repositório foi desenvolvido para oferecer uma experiência prática de criação de testes unitários com **TypeScript** e **Jest**, ajudando estudantes a compreender e aplicar boas práticas de testes de software.
+Este repositório foi desenvolvido para oferecer uma experiência prática na análise e correção de funções em **TypeScript**, utilizando **Jest** para criar e validar testes unitários. O objetivo é ajudar estudantes a compreender boas práticas de testes de software e aplicar técnicas para corrigir funções que não passam nos testes.
 
 ---
 
@@ -9,16 +8,18 @@ Este repositório foi desenvolvido para oferecer uma experiência prática de cr
 
 Testes unitários são verificações feitas em funções ou métodos individuais para garantir que cada parte funcione como esperado. Eles ajudam a:
 
-- Prevenir regressões.
-- Aumentar a confiança nas mudanças no código.
+- Identificar erros rapidamente.
+- Garantir que alterações não quebrem funcionalidades existentes (prevenção de regressões).
 - Melhorar a qualidade geral do software.
+
+Neste projeto, você terá a oportunidade de corrigir funções para que passem nos testes unitários já implementados.
 
 ---
 
 ## 🛠 **Ferramentas Utilizadas**
 
-- **TypeScript**: Usado para adicionar tipagem e melhorar a qualidade do código.
-- **Jest**: Framework de testes unitários para JavaScript e TypeScript.
+- **TypeScript**: Para adicionar tipagem e melhorar a qualidade do código.
+- **Jest**: Framework de testes unitários robusto, usado para criar e executar testes.
 
 ---
 
@@ -43,7 +44,7 @@ Para facilitar o desenvolvimento e execução dos testes, recomendamos instalar 
 
 ## 📁 **Estrutura do Projeto**
 
-A estrutura do projeto está organizada por funções, onde cada pasta contém o código da função e seus respectivos testes:
+A estrutura do projeto está organizada por funções, onde cada pasta contém o código da função principal e seus respectivos testes:
 
 ```
 react_native_test_unit/
@@ -72,6 +73,8 @@ Cada subpasta no diretório `src/` representa uma função e contém:
 - O arquivo principal da função (`.ts`).
 - O arquivo de teste correspondente (`.test.ts`).
 
+O objetivo é corrigir as funções principais para que os testes definidos em cada arquivo `.test.ts` passem com sucesso.
+
 ---
 
 ## 📝 **Exercícios Práticos**
@@ -79,7 +82,9 @@ Cada subpasta no diretório `src/` representa uma função e contém:
 ### **1. Função de Soma (`sum`)**
 Calcula a soma de dois números.
 
-**Cenários de teste sugeridos**:
+**Desafio**: Corrigir a função `sum` para cobrir os cenários de teste.
+
+**Cenários de teste existentes**:
 - Soma de dois números positivos.
 - Soma de dois números negativos.
 - Soma de zero com outro número.
@@ -90,7 +95,9 @@ Calcula a soma de dois números.
 ### **2. Função de Comprimento (`length`)**
 Retorna o comprimento de uma string.
 
-**Cenários de teste sugeridos**:
+**Desafio**: Corrigir a função `length` para cobrir os cenários de teste.
+
+**Cenários de teste existentes**:
 - String vazia.
 - String de um único caractere.
 - String longa.
@@ -100,7 +107,9 @@ Retorna o comprimento de uma string.
 ### **3. Função de Máximo (`max`)**
 Retorna o maior valor entre dois números.
 
-**Cenários de teste sugeridos**:
+**Desafio**: Corrigir a função `max` para cobrir os cenários de teste.
+
+**Cenários de teste existentes**:
 - Ambos os números positivos.
 - Ambos os números negativos.
 - Um número positivo e um negativo.
@@ -111,7 +120,9 @@ Retorna o maior valor entre dois números.
 ### **4. Função de Ordenação (`sort`)**
 Ordena um array de strings.
 
-**Cenários de teste sugeridos**:
+**Desafio**: Corrigir a função `sort` para cobrir os cenários de teste.
+
+**Cenários de teste existentes**:
 - Array vazio.
 - Array com um único elemento.
 - Array já ordenado.
@@ -122,7 +133,9 @@ Ordena um array de strings.
 ### **5. Função de Palíndromo (`isPalindrome`)**
 Verifica se uma string é um palíndromo.
 
-**Cenários de teste sugeridos**:
+**Desafio**: Corrigir a função `isPalindrome` para cobrir os cenários de teste.
+
+**Cenários de teste existentes**:
 - String vazia.
 - String de um único caractere.
 - String que é um palíndromo.
@@ -156,18 +169,18 @@ Verifica se uma string é um palíndromo.
 
 ## 🎯 **Objetivos do Projeto**
 
-1. Ensinar conceitos básicos de testes unitários.
-2. Desenvolver habilidades para identificar e corrigir falhas no código.
-3. Proporcionar um ambiente prático para consolidar conhecimentos em TypeScript e Jest.
+1. Identificar falhas em funções e aplicar correções baseadas nos testes unitários.
+2. Desenvolver habilidades de análise e resolução de problemas.
+3. Consolidar conhecimentos em TypeScript e Jest com práticas reais.
 
 ---
 
 ## 📧 **Contato**
 
 Se tiver dúvidas ou sugestões, entre em contato comigo:
-- **Email**: [jacksonsmith@puc.com](mailto:jacksonsmith@puc.com)
+- **Email**: [jackson.96@gmail.com](mailto:jackson.96@gmail.com)
 - **LinkedIn**: [linkedin.com/in/3jacksonsmith](https://linkedin.com/in/3jacksonsmith)
 
 ---
 
-Divirta-se praticando! 🚀
+Divirta-se corrigindo os desafios e aprendendo! 🚀
