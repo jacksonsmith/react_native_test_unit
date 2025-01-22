@@ -1,72 +1,173 @@
-### Read.me
 
-# Projeto de Prática de Testes Unitários com TypeScript e Jest
+# **Projeto de Prática de Testes Unitários com TypeScript e Jest**
 
-Este projeto foi criado com o propósito de oferecer aos estudantes uma oportunidade de praticar o desenvolvimento de testes unitários utilizando TypeScript e Jest. Abaixo estão os exercícios que este projeto aborda:
+Este repositório foi desenvolvido para oferecer uma experiência prática de criação de testes unitários com **TypeScript** e **Jest**, ajudando estudantes a compreender e aplicar boas práticas de testes de software.
 
-## Exercícios de Testes Unitários
+---
 
-### Função de Comprimento (Length)
-Teste a função `length` que retorna o comprimento de uma string.
+## 📚 **O que são Testes Unitários?**
 
-- Teste com string vazia
-- Teste com string de um único caractere
-- Teste com string já ordenada
-- Teste com string em ordem reversa
-- Teste com string não ordenada
+Testes unitários são verificações feitas em funções ou métodos individuais para garantir que cada parte funcione como esperado. Eles ajudam a:
 
-### Função de Máximo (Maximum)
-Teste a função `max` que retorna o maior entre dois números.
+- Prevenir regressões.
+- Aumentar a confiança nas mudanças no código.
+- Melhorar a qualidade geral do software.
 
-- Teste com ambos os números positivos
-- Teste com ambos os números negativos
-- Teste com um número positivo e um negativo
-- Teste com zero e um número positivo
-- Teste com zero e um número negativo
+---
 
-### Função de Ordenação (Sort)
-Teste a função `sort` que ordena um array de strings.
+## 🛠 **Ferramentas Utilizadas**
 
-- Teste com array vazio
-- Teste com array de um único elemento
-- Teste com array já ordenado
-- Teste com array em ordem reversa
-- Teste com array não ordenada
+- **TypeScript**: Usado para adicionar tipagem e melhorar a qualidade do código.
+- **Jest**: Framework de testes unitários para JavaScript e TypeScript.
 
-### Função de Palíndromo (Palindrome)
-Teste a função `isPalindrome` que verifica se uma string é um palíndromo.
+---
 
-- Teste com string vazia
-- Teste com string de um único caractere
-- Teste com string que é um palíndromo
-- Teste com string que não é um palíndromo
+## 🔌 **Extensões Recomendadas para VS Code**
 
-## Estrutura do Projeto
+Para facilitar o desenvolvimento e execução dos testes, recomendamos instalar as seguintes extensões no Visual Studio Code:
 
-O projeto está estruturado da seguinte forma:
+1. **[Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)**
+   - Monitora e executa os testes em tempo real enquanto você edita o código.
+   - Oferece feedback visual diretamente no editor.
 
-- **src**: Contém as funções que serão testadas.
-- **test**: Contém os testes unitários escritos com Jest.
+2. **[Jest Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner)**
+   - Permite executar ou depurar testes unitários diretamente de arquivos ou funções individuais com um clique.
 
-## Executando os Testes
+### Como Instalar
+1. Abra o VS Code.
+2. Acesse a aba de extensões (Ctrl+Shift+X ou Cmd+Shift+X no Mac).
+3. Pesquise por "Jest" e "Jest Runner".
+4. Clique em "Install" nas extensões listadas.
 
-Para executar os testes, siga os passos abaixo:
+---
+
+## 📁 **Estrutura do Projeto**
+
+A estrutura do projeto está organizada por funções, onde cada pasta contém o código da função e seus respectivos testes:
+
+```
+react_native_test_unit/
+├── src/
+│   ├── 1-sum/
+│   │   ├── sum.ts
+│   │   └── sum.test.ts
+│   ├── 2-length/
+│   │   ├── length.ts
+│   │   └── length.test.ts
+│   ├── 3-max/
+│   │   ├── max.ts
+│   │   └── max.test.ts
+│   ├── 4-sort/
+│   │   ├── sort.ts
+│   │   └── sort.test.ts
+│   └── 5-palindrome/
+│       ├── palindrome.ts
+│       └── palindrome.test.ts
+├── jest.config.js
+├── package.json
+└── README.md
+```
+
+Cada subpasta no diretório `src/` representa uma função e contém:
+- O arquivo principal da função (`.ts`).
+- O arquivo de teste correspondente (`.test.ts`).
+
+---
+
+## 📝 **Exercícios Práticos**
+
+### **1. Função de Soma (`sum`)**
+Calcula a soma de dois números.
+
+**Cenários de teste sugeridos**:
+- Soma de dois números positivos.
+- Soma de dois números negativos.
+- Soma de zero com outro número.
+- Soma de um número positivo com um negativo.
+
+---
+
+### **2. Função de Comprimento (`length`)**
+Retorna o comprimento de uma string.
+
+**Cenários de teste sugeridos**:
+- String vazia.
+- String de um único caractere.
+- String longa.
+
+---
+
+### **3. Função de Máximo (`max`)**
+Retorna o maior valor entre dois números.
+
+**Cenários de teste sugeridos**:
+- Ambos os números positivos.
+- Ambos os números negativos.
+- Um número positivo e um negativo.
+- Zero e outro número.
+
+---
+
+### **4. Função de Ordenação (`sort`)**
+Ordena um array de strings.
+
+**Cenários de teste sugeridos**:
+- Array vazio.
+- Array com um único elemento.
+- Array já ordenado.
+- Array desordenado.
+
+---
+
+### **5. Função de Palíndromo (`isPalindrome`)**
+Verifica se uma string é um palíndromo.
+
+**Cenários de teste sugeridos**:
+- String vazia.
+- String de um único caractere.
+- String que é um palíndromo.
+- String que não é um palíndromo.
+
+---
+
+## 🚀 **Executando os Testes**
 
 1. Instale as dependências:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 2. Execute os testes:
-    ```bash
-    npm test
-    ```
+   ```bash
+   npm test
+   ```
 
-## Ferramentas Utilizadas
+3. Para executar testes em modo "watch":
+   ```bash
+   npm test -- --watch
+   ```
 
-- **TypeScript**: Linguagem de programação usada para escrever as funções.
-- **Jest**: Framework de testes utilizado para escrever e executar os testes unitários.
+4. Limpar o cache do Jest:
+   ```bash
+   npm test -- --clearCache
+   ```
 
-Este projeto oferece um ambiente para os estudantes praticarem esses exercícios e aprimorarem suas habilidades em testes unitários utilizando TypeScript e Jest.
+---
+
+## 🎯 **Objetivos do Projeto**
+
+1. Ensinar conceitos básicos de testes unitários.
+2. Desenvolver habilidades para identificar e corrigir falhas no código.
+3. Proporcionar um ambiente prático para consolidar conhecimentos em TypeScript e Jest.
+
+---
+
+## 📧 **Contato**
+
+Se tiver dúvidas ou sugestões, entre em contato comigo:
+- **Email**: [jacksonsmith@puc.com](mailto:jacksonsmith@puc.com)
+- **LinkedIn**: [linkedin.com/in/3jacksonsmith](https://linkedin.com/in/3jacksonsmith)
+
+---
 
 Divirta-se praticando! 🚀
